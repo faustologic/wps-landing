@@ -1,27 +1,5 @@
 .body {
-  display: flex;
-  background-color: black;
-  height: 350px;
-}
-
-.body__text {
-  color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-left: 10px;
-}
-
-.body__input {
-  padding: 5px;
-}
-
-.body__btn {
-  background-color: #e40f0f;
-  color: whitesmoke;
-  font-weight: 600;
-  font-size: 12px;
-  padding: 5px;
-  margin-left: 10px;
-  border-radius: 2px;
-  border: none;
+  width: 100%;
+  height: fit-content;
+  background: url("/public/assets/header_image.png") center center cover;
 }
