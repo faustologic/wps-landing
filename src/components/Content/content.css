@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.content__left {
+  text-align: center;
+}
+
+.content__right {
+  width: 500px;
+}
+
+.content__img {
+  height: 100%;
+  width: 100%;
+}
+
+.content__separator {
+  background-color: darkslategray;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.content__header {
+  height: 150px;
+  background-size: cover;
+  background-image: url("../../assets/header_image.png");
+}
+
+.content__footer {
+  height: 250px;
+  background-size: cover;
+  background-image: url("../../assets/header_image.png");
+}

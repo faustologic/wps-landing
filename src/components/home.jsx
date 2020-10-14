@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./body.css";
-import Content from "./content";
+import Content from "./Content/content";
 
 class Body extends Component {
   render() {
