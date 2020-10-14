@@ -6,8 +6,15 @@
   background-color: #000;
 }
 
+.content__header {
+  height: 150px;
+  background-size: cover;
+  background-image: url("../../assets/header_image.png");
+}
+
 .content__left {
   text-align: center;
+  color: white;
 }
 
 .content__right {
@@ -19,17 +26,11 @@
   width: 100%;
 }
 
-.content__separator {
+/* .content__separator {
   background-color: darkslategray;
   color: whitesmoke;
   width: 100%;
-}
-
-.content__header {
-  height: 150px;
-  background-size: cover;
-  background-image: url("../../assets/header_image.png");
-}
+} */
 
 .content__footer {
   height: 250px;
