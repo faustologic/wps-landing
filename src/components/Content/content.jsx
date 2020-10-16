@@ -37,6 +37,7 @@ class Content extends Component {
             Regístrate usando tu correo electrónico o conéctate a nuestras redes
             sociales para ser el primero en enterarte.
           </p>
+          <i className="fab fa-twitter"></i>
         </div>
         <small className="content__allRights">
           Todos los derechos reservados. World Soccer Platform, Inc. 2020
