@@ -65,11 +65,14 @@
   width: 100%;
 }
 
+.content__footerContainer {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 .content__footer {
   height: 250px;
   background-size: cover;
-  margin-top: 30px;
-  margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.742);
   background-image: url("../../assets/header_image.png");
 }

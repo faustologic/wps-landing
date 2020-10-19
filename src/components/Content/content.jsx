@@ -32,12 +32,14 @@ class Content extends Component {
           </div>
           {/* <div className="content__separator"></div> */}
         </div>
-        <div className="content__footer">
-          <p>
-            Regístrate usando tu correo electrónico o conéctate a nuestras redes
-            sociales para ser el primero en enterarte.
-          </p>
-          <i className="fab fa-twitter"></i>
+        <div className="content__footerContainer">
+          <div className="content__footer">
+            <p>
+              Regístrate usando tu correo electrónico o conéctate a nuestras
+              redes sociales para ser el primero en enterarte.
+            </p>
+            <i className="fab fa-twitter"></i>
+          </div>
         </div>
         <small className="content__allRights">
           Todos los derechos reservados. World Soccer Platform, Inc. 2020
