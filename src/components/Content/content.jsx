@@ -12,9 +12,7 @@ class Content extends Component {
   render() {
     return (
       <Fragment>
-        <div className="content__header">
-          <img className="content__img" src={headerImg} alt="header" />
-        </div>
+        <div className="content__header"></div>
         <div className="content">
           <div className="content__left">
             <small>La Excelencia del Fútbol Mundial</small>
