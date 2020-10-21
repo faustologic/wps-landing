@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import "./content.css";
-import headerImg from "../../assets/header_image.png";
 import footballImg from "../../assets/Hero_Image_1-2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

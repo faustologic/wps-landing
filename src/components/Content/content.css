@@ -107,6 +107,7 @@
   padding: 10px 0;
 }
 
+/*--DESKTOP--*/
 @media only screen and (min-width: 792px) {
   .content__footerInput {
     display: none;
