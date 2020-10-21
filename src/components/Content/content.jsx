@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./content.css";
 import headerImg from "../../assets/header_image.png";
 import footballImg from "../../assets/Hero_Image_1-2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Content extends Component {
   handlerSendEmail = () => {
@@ -16,7 +17,7 @@ class Content extends Component {
         </div>
         <div className="content">
           <div className="content__left">
-            <small>La Excelencia del Futbol Mundial</small>
+            <small>La Excelencia del Fútbol Mundial</small>
             <h2>En la Palma de tu Mano.</h2>
             <input
               className="content__input"
@@ -38,7 +39,11 @@ class Content extends Component {
               Regístrate usando tu correo electrónico o conéctate a nuestras
               redes sociales para ser el primero en enterarte.
             </p>
-            <i className="fab fa-twitter"></i>
+            <div className="content__icons">
+              <FontAwesomeIcon icon={["fab", "twitter"]} href="" />
+              <FontAwesomeIcon icon={["fab", "instagram"]} href="" />
+              <FontAwesomeIcon icon={["fab", "facebook-square"]} href="" />
+            </div>
           </div>
         </div>
         <small className="content__allRights">

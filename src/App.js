@@ -1,4 +1,5 @@
 import React from "react";
+import "./components/FontAwesomeIcons";
 import "./App.css";
 import Body from "./components/home";
 
