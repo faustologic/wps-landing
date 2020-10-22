@@ -1,0 +1,36 @@
+.newsletter__input {
+  width: 253px;
+  height: 40px;
+  font-size: 13px;
+  border: 1px #c9d3dd solid;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.newsletter__btn {
+  width: 113px;
+  background-color: #e40f0f;
+  border: 1px #29323d solid;
+  border-radius: 3px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 12px;
+  height: 40px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.newsletter__btn:hover {
+  background-color: whitesmoke;
+  color: #e40f0f;
+}
+
+/*--MOBILE--*/
+@media only screen and (max-width: 600px) {
+  .newsletter__input {
+    display: none;
+  }
+  .newsletter__btn {
+    display: none;
+  }
+}
