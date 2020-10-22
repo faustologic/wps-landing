@@ -20,6 +20,8 @@ class Newsletter extends Component {
           <input
             className="newsletter__input"
             text="email"
+            value={email}
+            onChange={() => setEmail(email)}
             placeholder="Ingresa tu correo"
             required
           />
