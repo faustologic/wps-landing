@@ -2,29 +2,31 @@ import React, { Component } from "react";
 import "./newsletter.css";
 
 class Newsletter extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      email: ''
-    }
-  }
+  state = {
+    email: "",
+  };
 
   handlerSendEmail = () => {
     console.log("Email Send!");
     const requestOptions = {
       method: "POST",
-      headers: { "Content-Type": "application/json", 'Access-Control-Allow-Origin': '*' },
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify({ email: this.state.email }),
     };
-    fetch("http://localhost:3001/addNewSuscriber", requestOptions)
-      .then((response) => console.log(response.json()));
+    fetch(
+      "http://localhost:3001/addNewSuscriber",
+      requestOptions
+    ).then((response) => console.log(response.json()));
   };
 
-  setEmail(param) {
+  setEmail = (param) => {
     this.setState({
-      email: param
+      email: param,
     });
-  }
+  };
 
   render() {
     return (
@@ -34,7 +36,7 @@ class Newsletter extends Component {
             className="newsletter__input"
             text="email"
             value={this.state.email}
-            onChange={e => this.setEmail(e.target.value)}
+            onChange={(e) => this.setEmail(e.target.value)}
             placeholder="Ingresa tu correo"
             required
           />

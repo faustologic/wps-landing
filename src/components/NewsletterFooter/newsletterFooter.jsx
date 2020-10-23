@@ -2,16 +2,23 @@ import React, { Component } from "react";
 import "./newsletterFooter.css";
 
 class NewsletterFooter extends Component {
+  state = {
+    email: "",
+  };
   handlerSendEmail = () => {
     console.log("Email Send!");
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ title: "React POST Request Example" }),
+      body: JSON.stringify({ title: this.state.email }),
     };
-    fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
+    fetch("http://localhost:3001/addNewSuscriber", requestOptions)
       .then((response) => response.json())
       .then((data) => this.setState({ postId: data.id }));
+  };
+
+  setEmail = (param) => {
+    this.setState({ email: param });
   };
 
   render() {
@@ -21,6 +28,8 @@ class NewsletterFooter extends Component {
           <input
             className="newsletterFooter__input"
             text="email"
+            value={this.state.email}
+            onChange={(e) => this.setEmail(e.target.value)}
             placeholder="Ingresa tu correo"
             required
           />

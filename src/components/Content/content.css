@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: black;
 }
 
 .content__header {
@@ -59,7 +59,6 @@
   font-size: 18px;
   font-weight: lighter;
   text-align: center;
-  padding: 50px 400px 100px 400px;
 }
 
 .content__icons {
@@ -70,7 +69,6 @@
   text-align: center;
   cursor: pointer;
   font-size: 40px;
-  margin: -65px 400px 0 400px;
 }
 
 .content__allRights {
@@ -92,6 +90,7 @@
   .content__left {
     text-align: left;
     margin-top: 20px;
+    margin-left: 20px;
   }
   .content__left > h2 {
     margin-top: 5px;
@@ -140,5 +139,43 @@
     cursor: pointer;
     font-size: 40px;
     margin: -65px 150px 0 150px;
+  }
+}
+
+/*--TABLET--*/
+@media only screen and (min-width: 600px) {
+  .content__left {
+    padding: 20px 5px;
+  }
+
+  .content__left > small {
+    margin: 0 10px;
+    font-size: 17px;
+  }
+
+  .content__left > h2 {
+    margin-left: 10px;
+  }
+
+  .content__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .content__footer > p {
+    padding: 50px 50px 100px 50px;
+  }
+  .content__icons {
+    margin: -65px 10px 0 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*--DESKTOP---*/
+  .content__footer > p {
+    padding: 50px 200px 100px 200px;
+  }
+  .content__icons {
+    margin: -65px 200px 0 200px;
   }
 }

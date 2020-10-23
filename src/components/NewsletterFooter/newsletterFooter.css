@@ -4,6 +4,12 @@
   }
 }
 
+@media only screen and (max-width: 792px) {
+  .newsletterFooter__form {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .newsletterFooter__form {
     display: grid;

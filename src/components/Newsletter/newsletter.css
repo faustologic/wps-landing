@@ -34,3 +34,27 @@
     display: none;
   }
 }
+
+/*--TABLET--*/
+@media only screen and (max-width: 768px) {
+  .newsletter__input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter__btn {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*--DESKTOP---*/
+  .newsletter__input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter__btn {
+    margin-left: 10px;
+  }
+}
