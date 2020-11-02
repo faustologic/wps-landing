@@ -4,7 +4,7 @@ import footballImg from "../../assets/Hero_Image_1-2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter from "../Newsletter/newsletter";
 import NewsletterFooter from "../NewsletterFooter/newsletterFooter";
-
+import { ToastProvider } from "react-toast-notifications";
 class Content extends Component {
   render() {
     return (
@@ -14,7 +14,9 @@ class Content extends Component {
           <div className="content__left">
             <small>La Excelencia del Fútbol Mundial</small>
             <h2>En la Palma de tu Mano.</h2>
-            <Newsletter />
+            <ToastProvider>
+              <Newsletter />
+            </ToastProvider>
           </div>
           <div className="content__right">
             <img className="content__img" src={footballImg} alt="" />
@@ -23,7 +25,9 @@ class Content extends Component {
         </div>
         <div className="content__footerContainer">
           <div className="content__footer">
-            <NewsletterFooter />
+            <ToastProvider>
+              <NewsletterFooter />
+            </ToastProvider>
             <p>
               Regístrate usando tu correo electrónico o conéctate a nuestras
               redes sociales para ser el primero en enterarte.
