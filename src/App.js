@@ -1,7 +1,7 @@
 import React from "react";
 import "./components/FontAwesomeIcons";
 import "./App.css";
-import Body from "./components/home";
+import Body from "./components/body";
 
 function App() {
   return (

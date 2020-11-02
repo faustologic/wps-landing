@@ -12,7 +12,7 @@ const Newsletter = () => {
     let formIsValid = true;
     if (email.length === 0) {
       formIsValid = false;
-      error = "el email es requerido";
+      error = "El email es requerido!";
     }
     if (typeof email !== undefined) {
       let lastAtPos = email.lastIndexOf("@");
@@ -28,7 +28,7 @@ const Newsletter = () => {
         )
       ) {
         formIsValid = false;
-        error = "el email no es valido.";
+        error = "El email ingresado no es válido!";
       }
     }
     return formIsValid;
@@ -56,8 +56,8 @@ const Newsletter = () => {
         });
       })
       .catch((err) => {
-        if (err.response.data.message.includes('unique')) {
-          addToast('el email ya existe en nuestra base de datos', {
+        if (err.response.data.message.includes("unique")) {
+          addToast("el email ya existe en nuestra base de datos", {
             appearance: "error",
             autoDismiss: true,
           });
