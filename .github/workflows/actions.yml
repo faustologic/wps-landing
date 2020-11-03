@@ -25,14 +25,14 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           tags: latest
-        - name: Install SSH key
-          uses: shimataro/ssh-key-action@v2
-          with:
-            key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
             
-        - name: deploy server
-          run: |
-            apt-get update -y && apt-get upgrade -y
-            apt-get install openssl -y
-            apt-get install openssh-client -y
-            VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILEsh bin/deploy.sh
+      - name: deploy server
+        run: |
+          apt-get update -y && apt-get upgrade -y
+          apt-get install openssl -y
+          apt-get install openssh-client -y
+          VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILEsh bin/deploy.sh
