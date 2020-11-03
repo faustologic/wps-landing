@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  app:
+    environment:
+      - VIRTUAL_HOST=$WPS_VIRTUAL_HOST
+      - LETSENCRYPT_HOST=$WPS_VIRTUAL_HOST
+      - LETSENCRYPT_EMAIL=$LETSENCRYPT_EMAIL
+    image: faustologic/wps-landing
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:50200:80
+networks:
+  default:
+    external:
+      name: proxy
