@@ -1,9 +1,9 @@
 FROM node:12.13-alpine as builder
 WORKDIR /app
-COPY package.json yarn.lock  /app/
-RUN yarn install --pure-lockfile
+COPY package.json package-lock.lock  /app/
+RUN npm install 
 COPY . /app
-RUN yarn run build
+RUN npm run build
 
 FROM nginx:1.17-alpine as app
 
