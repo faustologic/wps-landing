@@ -36,12 +36,14 @@ const Newsletter = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     if (!handleValidation()) {
-      return addToast(error, { appearance: "error", autoDismiss: true });
+      addToast(error, { appearance: "error", autoDismiss: true });
+      return setEmail('')
     }
     const data = {
       email: email,
     };
-
+    
+    
     return axios
       .post(`${apiUrl}/subcriptions`, data, {
         headers: {
@@ -54,6 +56,7 @@ const Newsletter = () => {
           appearance: "success",
           autoDismiss: true,
         });
+        setEmail('')
       })
       .catch((err) => {
         if (err.response.data.message.includes('unique')) {
@@ -61,8 +64,10 @@ const Newsletter = () => {
             appearance: "error",
             autoDismiss: true,
           });
+          setEmail('')
         }
       });
+
   };
   return (
     <form className="newsletter__form" onSubmit={handleSubmit}>

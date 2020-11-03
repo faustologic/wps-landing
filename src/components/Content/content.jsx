@@ -6,7 +6,9 @@ import Newsletter from "../Newsletter/newsletter";
 import NewsletterFooter from "../NewsletterFooter/newsletterFooter";
 import { ToastProvider } from "react-toast-notifications";
 class Content extends Component {
+  
   render() {
+
     return (
       <Fragment>
         <div className="content__header"></div>
