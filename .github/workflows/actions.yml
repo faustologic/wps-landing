@@ -8,18 +8,12 @@ jobs:
   build_front:
     name: Build Frontend wps-landing
     runs-on: ubuntu-latest
-    uses: actions/checkout@master
     steps:
       - name: Checkout repository
-        run: | 
-          touch wps-environment
-          echo "export PORT=${secrets.PORT}" >> wps-environment
-          echo "export REACT_APP_API_URL=${secrets.REACT_APP_API_URL}" >> wps-environment
-          cat wps-environment
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
-        path: |
-          wps-environment
+      - uses: actions/checkout@master
+        env: 
+          PORT: ${{secrets.PORT}}
+          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL}}
   deploy:
     name: deploy to cluster
     runs-on: ubuntu-latest
