@@ -8,9 +8,9 @@ jobs:
   build_front:
     name: Build Frontend wps-landing
     runs-on: ubuntu-latest
+    uses: actions/checkout@master
     steps:
       - name: Checkout repository
-        uses: actions/checkout@master
         run: | 
           touch wps-environment
           echo "export PORT=${secrets.PORT}" >> wps-environment
