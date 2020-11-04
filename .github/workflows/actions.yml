@@ -22,8 +22,8 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           tags: latest
-      - name: Install SSH key
-        uses: ielabokkie/ssh-key-and-known-hosts-action@v1
+      - name: Setup SSH
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1.0.3
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.HOSTS }}
