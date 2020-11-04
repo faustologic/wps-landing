@@ -33,7 +33,7 @@ jobs:
             
       - name: deploy server
         run: |
-          sudo apt-get update -y && apt-get upgrade -y
-          sudo apt-get install openssl -y
-          sudo apt-get install openssh-client -y
+          apt-get update -y && apt-get upgrade -y
+          apt-get install openssl -y
+          apt-get install openssh-client -y
           VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILEsh bin/deploy.sh
