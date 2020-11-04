@@ -1,4 +1,4 @@
-
+echo $DEPLOY_USER@$DEPLOY_HOST
 echo "inserting the image version in docker-compose template"
 sed -i "s#faustologic\/wps-landing#$CONTAINER_NAME:$VERSION#" template/docker-compose.yml.template
 
