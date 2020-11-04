@@ -1,6 +1,4 @@
-apt-get update -y && apt-get upgrade -y
-apt-get install openssl -y
-apt-get install openssh-client -y
+
 echo "inserting the image version in docker-compose template"
 sed -i "s#faustologic\/wps-landing#$CONTAINER_NAME:$VERSION#" template/docker-compose.yml.template
 
