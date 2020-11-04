@@ -33,4 +33,4 @@ jobs:
             
       - name: deploy server
         run: |
-          sudo VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILEsh bin/deploy.sh
+          VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILE sh bin/deploy.sh
