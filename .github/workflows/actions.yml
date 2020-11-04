@@ -7,9 +7,6 @@ on:
 env: 
   PORT: ${{secrets.PORT}}
   REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL}}
-  DEPLOY_HOST: ${{ secrets.DEPLOY_HOST}}
-  DEPLOY_USER: ${{ secrets.DEPLOY_USER}}
-  DOCKER_COMPOSE_FILE: ${{ secrets.DOCKER_COMPOSE_FILE}}
 jobs:
   deploy:
     name: Build Frontend wps-landing
@@ -32,5 +29,10 @@ jobs:
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
             
       - name: deploy server
-        run: |
-          VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILE sh bin/deploy.sh
+        run: sh bin/deploy.sh
+        env: 
+          VERSION: latest
+          CONTAINER_NAME: tekstudiodev/wps-landing
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST}}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER}}
+          DOCKER_COMPOSE_FILE: ${{ secrets.DOCKER_COMPOSE_FILE}}
