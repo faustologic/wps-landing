@@ -28,12 +28,10 @@ jobs:
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
+          user: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          # known_hosts: ${{ secrets.KNOWN_HOSTS }}
             
       - name: deploy server
         run: |
-          sudo apt-get update -y && apt-get upgrade -y
-          sudo apt-get install openssl -y
-          sudo apt-get install openssh-client -y
           VERSION=latest CONTAINER_NAME=tekstudiodev/wps-landing DEPLOY_USER=$DEPLOY_USER DEPLOY_HOST=$DEPLOY_HOST DOCKER_COMPOSE_FILE=$DOCKER_COMPOSE_FILEsh bin/deploy.sh
