@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./content.css";
-import footballImg from "../../assets/Hero_Image_1-2.png";
+import footballImg from "../../assets/Hero_image_PNG.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter from "../Newsletter/newsletter";
 import NewsletterFooter from "../NewsletterFooter/newsletterFooter";
