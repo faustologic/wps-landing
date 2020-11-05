@@ -26,14 +26,14 @@
 }
 
 /*--MOBILE--*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .newsletter__input {
     display: none;
   }
   .newsletter__btn {
     display: none;
   }
-}
+} */
 
 /*--TABLET--*/
 @media only screen and (max-width: 768px) {

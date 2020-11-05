@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import "./content.css";
+//import "./content.css";
+import "./contentUpdate.css";
 import footballImg from "../../assets/Hero_image_PNG.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter from "../Newsletter/newsletter";
@@ -39,9 +40,11 @@ class Content extends Component {
             </div>
           </div>
         </div>
-        <small className="content__allRights">
-          Todos los derechos reservados. World Soccer Platform, Inc. 2020
-        </small>
+        <div className="content__allRights">
+          <small>
+            Todos los derechos reservados. World Soccer Platform, Inc. 2020
+          </small>
+        </div>
       </Fragment>
     );
   }

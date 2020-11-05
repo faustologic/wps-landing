@@ -5,14 +5,14 @@ import { useToasts } from "react-toast-notifications";
 import "./newsletterFooter.css";
 
 const NewsletterFooter = () => {
-  const addToast = useToasts().addToast
+  const addToast = useToasts().addToast;
   const [email, setEmail] = useState("");
   let error = "";
   const handleValidation = () => {
     let formIsValid = true;
     if (email.length === 0) {
       formIsValid = false;
-      error = "el email es requerido";
+      error = "¡Por favor, ingrese su email!";
     }
     if (typeof email !== undefined) {
       let lastAtPos = email.lastIndexOf("@");
@@ -28,7 +28,7 @@ const NewsletterFooter = () => {
         )
       ) {
         formIsValid = false;
-        error = "el email no es valido.";
+        error = "¡El email ingresado no es válido!";
       }
     }
     return formIsValid;
@@ -39,8 +39,8 @@ const NewsletterFooter = () => {
       return addToast(error, { appearance: "error", autoDismiss: true });
     }
     const data = {
-      email: email
-    }
+      email: email,
+    };
 
     return axios
       .post(`${apiUrl}/subcriptions`, data, {
@@ -50,14 +50,17 @@ const NewsletterFooter = () => {
         },
       })
       .then((response) => {
-        addToast(`${response.data.email} ha sido registrado exitosamente`, {
-          appearance: "success",
-          autoDismiss: true,
-        });
+        addToast(
+          `¡${response.data.email} ha sido registrado de manera exitosa!`,
+          {
+            appearance: "success",
+            autoDismiss: true,
+          }
+        );
       })
       .catch((err) => {
-        if (err.response.data.message.includes('unique')) {
-          addToast('el email ya existe en nuestra base de datos', {
+        if (err.response.data.message.includes("unique")) {
+          addToast("¡Este email ya existe en nuestra base de datos!", {
             appearance: "error",
             autoDismiss: true,
           });
@@ -79,4 +82,3 @@ const NewsletterFooter = () => {
 };
 
 export default NewsletterFooter;
-

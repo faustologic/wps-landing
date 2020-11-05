@@ -12,7 +12,7 @@ const Newsletter = () => {
     let formIsValid = true;
     if (email.length === 0) {
       formIsValid = false;
-      error = "El email es requerido!";
+      error = "¡Por favor, ingrese su email!";
     }
     if (typeof email !== undefined) {
       let lastAtPos = email.lastIndexOf("@");
@@ -28,7 +28,7 @@ const Newsletter = () => {
         )
       ) {
         formIsValid = false;
-        error = "El email ingresado no es válido!";
+        error = "¡El email ingresado no es válido!";
       }
     }
     return formIsValid;
@@ -50,14 +50,17 @@ const Newsletter = () => {
         },
       })
       .then((response) => {
-        addToast(`${response.data.email} ha sido registrado exitosamente`, {
-          appearance: "success",
-          autoDismiss: true,
-        });
+        addToast(
+          `¡${response.data.email} ha sido registrado de manera exitosa!`,
+          {
+            appearance: "success",
+            autoDismiss: true,
+          }
+        );
       })
       .catch((err) => {
         if (err.response.data.message.includes("unique")) {
-          addToast("el email ya existe en nuestra base de datos", {
+          addToast("¡Este email ya existe en nuestra base de datos!", {
             appearance: "error",
             autoDismiss: true,
           });
