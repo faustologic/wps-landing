@@ -74,6 +74,7 @@ const NewsletterFooter = () => {
         text="email"
         className="newsletterFooter__input"
         value={email}
+        placeholder="Ingrese su email"
         onChange={(e) => setEmail(e.target.value)}
       />
       <input type="submit" className="newsletterFooter__btn" value="AVISAME" />

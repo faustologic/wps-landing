@@ -79,6 +79,7 @@ const Newsletter = () => {
         text="email"
         className="newsletter__input"
         value={email}
+        placeholder="Ingrese su email"
         onChange={(e) => setEmail(e.target.value)}
       />
       <input type="submit" className="newsletter__btn" value="AVISAME" />
