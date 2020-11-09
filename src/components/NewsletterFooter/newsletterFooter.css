@@ -29,7 +29,7 @@
   background-color: whitesmoke;
   color: #e40f0f;
 }
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) {
   .content__allRights {
     padding: 10px 0;
     bottom: 0;
@@ -37,13 +37,12 @@
     width: 100%;
     height: max-content;
   }
-}
-@media only screen and (min-width: 792px) {
+} */
+/* @media only screen and (min-width: 792px) {
   .newsletterFooter__form {
     display: grid;
   }
-}
-
+} */
 
 @media only screen and (min-width: 1000px) {
   .newsletterFooter__form {
@@ -54,8 +53,8 @@
   }
   .content__left > h2 {
     margin-left: 20px;
-    line-height: unset;;
-}
+    line-height: unset;
+  }
   .content__footer > p {
     padding: 40px 0 50px 10px;
   }
