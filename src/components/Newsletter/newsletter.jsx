@@ -37,13 +37,12 @@ const Newsletter = () => {
     evt.preventDefault();
     if (!handleValidation()) {
       addToast(error, { appearance: "error", autoDismiss: true });
-      return setEmail('')
+      return setEmail("");
     }
     const data = {
       email: email,
     };
-    
-    
+
     return axios
       .post(`${apiUrl}/subcriptions`, data, {
         headers: {
@@ -59,7 +58,7 @@ const Newsletter = () => {
             autoDismiss: true,
           }
         );
-        setEmail('')
+        setEmail("");
       })
       .catch((err) => {
         if (err.response.data.message.includes("unique")) {
@@ -67,13 +66,12 @@ const Newsletter = () => {
             appearance: "error",
             autoDismiss: true,
           });
-          setEmail('')
+          setEmail("");
         }
       });
-
   };
   return (
-    <form className="newsletter__form" onSubmit={handleSubmit}>
+    <div className="newsletter__form" onSubmit={handleSubmit}>
       <input
         type="text"
         text="email"
@@ -83,7 +81,7 @@ const Newsletter = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <input type="submit" className="newsletter__btn" value="AVISAME" />
-    </form>
+    </div>
   );
 };
 
