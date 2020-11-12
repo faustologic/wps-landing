@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("/src/assets/low_polygon_black_dark.png") cover center;
-  background-color: #111111;
+  background: url("./assets/low_polygon_black_dark.png") cover center;
+  background-color: black;
 }
 
 code {
