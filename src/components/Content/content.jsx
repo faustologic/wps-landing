@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./contentUpdate.css";
-import backgroundImg from "../../assets/header_image.png";
+// import backgroundImg from "../../assets/header_image.png";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter from "../Newsletter/newsletter";
