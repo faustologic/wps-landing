@@ -1,11 +1,11 @@
 .newsletter__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsletter__input {
-  width: 90%;
+  width: 85%;
   height: 40px;
   font-size: 13px;
   border: 1px #cad4de solid;
@@ -15,7 +15,7 @@
 }
 
 .newsletter__btn {
-  width: 91%;
+  width: 87%;
   background-color: #e40f0f;
   border: none;
   border-radius: 3px;

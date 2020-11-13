@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 .content__img {
-  width: 250px;
+  width: 150px;
   margin: 10px auto;
 }
 .content__left > h2 {
@@ -47,11 +47,11 @@
   cursor: pointer;
   font-size: 20px;
   padding: 20px 0 30px;
-  margin: 0 2px;
+  margin: 0 auto;
 }
 .fa-facebook-square {
   border: 1px #cad4de solid;
-  padding: 5px 30px;
+  padding: 5px 33px;
   border-radius: 5px;
 }
 .fa-facebook-square:hover {
@@ -60,7 +60,7 @@
 
 .fa-instagram {
   border: 1px #cad4de solid;
-  padding: 5px 30px;
+  padding: 5px 33px;
   border-radius: 5px;
 }
 .fa-instagram:hover {
@@ -69,7 +69,7 @@
 
 .fa-twitter {
   border: 1px #cad4de solid;
-  padding: 5px 30px;
+  padding: 5px 33px;
   border-radius: 5px;
 }
 .fa-twitter:hover {
