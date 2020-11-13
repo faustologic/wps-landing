@@ -24,6 +24,8 @@
   font-size: 12px;
   height: 40px;
   box-shadow: 2px 2px 3px #1111115b;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 .newsletter__btn:hover {
