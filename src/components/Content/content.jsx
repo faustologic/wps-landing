@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./contentUpdate.css";
 import logo from "../../assets/logo.png";
 import Newsletter from "../Newsletter/newsletter";
-import Icons from "../iconsComponent/Icons";
+import SocialIcons from "../socialIcons/socialIcons";
 import { ToastProvider } from "react-toast-notifications";
 
 class Content extends Component {
@@ -26,7 +26,7 @@ class Content extends Component {
               Regístrate usando tu correo electrónico o conéctate a nuestras
               redes sociales para ser el primero en enterarte.
             </p>
-            <Icons />
+            <SocialIcons />
           </div>
           <div className="content__allRights">
             <small>

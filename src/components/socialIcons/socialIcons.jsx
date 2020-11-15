@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Icons = () => {
+const SocialIcons = () => {
   return (
     <div className="content__icons">
       <a href="https://twitter.com/WSPSoccer" style={{ color: "#626465" }}>
@@ -23,4 +23,4 @@ const Icons = () => {
   );
 };
 
-export default Icons;
+export default SocialIcons;
