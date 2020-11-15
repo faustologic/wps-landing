@@ -12,6 +12,15 @@
   border-radius: 3px;
   margin: 10px auto;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+input:focus,
+textarea:focus,
+input[type]:focus {
+  outline: none !important;
+  border: 1px solid #747678;
+  box-shadow: 1px 1px 5px #1111115b;
 }
 
 .newsletter__btn {
@@ -26,6 +35,8 @@
   box-shadow: 2px 2px 3px #1111115b;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .newsletter__btn:hover {

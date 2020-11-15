@@ -51,7 +51,9 @@
 .fa-facebook-square {
   border: 1px #cad4de solid;
   padding: 5px 33px;
-  border-radius: 5px;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .fa-facebook-square:hover {
   color: #949698;
@@ -60,7 +62,9 @@
 .fa-instagram {
   border: 1px #cad4de solid;
   padding: 5px 33px;
-  border-radius: 5px;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .fa-instagram:hover {
   color: #949698;
@@ -69,7 +73,9 @@
 .fa-twitter {
   border: 1px #cad4de solid;
   padding: 5px 33px;
-  border-radius: 5px;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .fa-twitter:hover {
   color: #949698;

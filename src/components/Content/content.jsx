@@ -12,12 +12,7 @@ class Content extends Component {
         <div className="content">
           <div className="content__logo">
             <img className="content__img" src={logo} alt="" />
-            {/* <small>La Excelencia del Fútbol Mundial</small>
-            <h2>En la Palma de tu Mano.</h2> */}
           </div>
-          {/* <div className="content__right">
-          </div> */}
-          {/* <div className="content__separator"></div> */}
           <div className="content__newsletter">
             <ToastProvider>
               <Newsletter />
