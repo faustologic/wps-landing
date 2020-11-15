@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import "./contentUpdate.css";
-// import backgroundImg from "../../assets/header_image.png";
 import logo from "../../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Newsletter from "../Newsletter/newsletter";
+import Icons from "../iconsComponent/Icons";
 import { ToastProvider } from "react-toast-notifications";
+
 class Content extends Component {
   render() {
     return (
@@ -26,11 +26,7 @@ class Content extends Component {
               Regístrate usando tu correo electrónico o conéctate a nuestras
               redes sociales para ser el primero en enterarte.
             </p>
-            <div className="content__icons">
-              <FontAwesomeIcon icon={["fab", "twitter"]} href="" />
-              <FontAwesomeIcon icon={["fab", "instagram"]} href="" />
-              <FontAwesomeIcon icon={["fab", "facebook-square"]} href="" />
-            </div>
+            <Icons />
           </div>
           <div className="content__allRights">
             <small>
