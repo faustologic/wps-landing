@@ -7,6 +7,7 @@ import "./newsletter.css";
 const Newsletter = () => {
   const addToast = useToasts().addToast;
   const [email, setEmail] = useState("");
+  
   let error = "";
   const handleValidation = () => {
     let formIsValid = true;
@@ -71,7 +72,7 @@ const Newsletter = () => {
       });
   };
   return (
-    <div className="newsletter__form" onSubmit={handleSubmit}>
+    <div className="newsletter__form">
       <input
         type="text"
         text="email"
@@ -80,7 +81,7 @@ const Newsletter = () => {
         placeholder="Ingrese su email"
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input type="submit" className="newsletter__btn" value="AVISAME" />
+      <input type="submit" className="newsletter__btn" value="AVISAME" onClick={handleSubmit} />
     </div>
   );
 };

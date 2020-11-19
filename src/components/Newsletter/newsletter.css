@@ -42,6 +42,7 @@ input[type]:focus {
 .newsletter__btn:hover {
   background-color: #800c0c;
   border: none;
+  cursor: pointer;
 }
 
 /* @media only screen and (max-width: 768px) {
