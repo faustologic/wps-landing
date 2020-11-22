@@ -22,7 +22,21 @@ input[type]:focus {
   border: 1px solid #747678;
   box-shadow: 1px 1px 5px #1111115b;
 }
-
+.newsletter__btn_close {
+  width: 25%;
+  background-color: #e40f0f;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  height: 40px;
+  color: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #1111115b;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .newsletter__btn {
   width: 87%;
   background-color: #e40f0f;
@@ -66,3 +80,82 @@ input[type]:focus {
     margin-left: 10px;
   }
 } */
+.modal {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-dialog {
+  position: relative;
+  width: 300px;
+  margin: 0;
+  pointer-events: none;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
