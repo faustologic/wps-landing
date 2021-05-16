@@ -3,7 +3,6 @@ import axios from "axios";
 import { apiUrl } from "../../config/app";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 
-
 import "./newsletter.css";
 
 const Newsletter = () => {
